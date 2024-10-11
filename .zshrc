@@ -77,11 +77,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/opt:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
 
-export EDITOR=nvim.appimage
+export EDITOR=nvim
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -107,7 +105,7 @@ export EDITOR=nvim.appimage
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim.appimage"
+alias vim="nvim"
 alias mux="tmuxinator"
 alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
 

@@ -1,0 +1,18 @@
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 80 
+UseTab: Always
+
+InsertNewlineAtEOF: True
+BreakBeforeBraces: Linux
+
+AlignAfterOpenBracket: Align
+
+BinPackArguments: False
+BinPackParameters: False
+
+AllowAllParametersOfDeclarationOnNextLine: False
+AllowAllArgumentsOnNextLine: False
+
+# AlwaysBreakAfterReturnType: None
+# AlwaysBreakAfterDefinitionReturnType: None

@@ -1,7 +1,7 @@
-# /home/tecuc/.config/tmuxinator/git_tutorial.yml
+# /home/tecuc/.config/tmuxinator/nvim.yml
 
-name: git_tutorial
-root: ~/Dev/test/git_tutorial
+name: nvim
+root: ~/.config/nvim
 
 # Optional tmux socket
 # socket_name: foo
@@ -46,4 +46,4 @@ root: ~/Dev/test/git_tutorial
 
 windows:
   - editor: vim
-  - coms: 
+  - coms:

@@ -78,6 +78,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="/opt/idea-IU-242.23339.11/bin/:$PATH"
 
 export EDITOR=nvim
 
@@ -105,7 +106,10 @@ export EDITOR=nvim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias sudo='sudo '
+
 alias vim="nvim"
+
 alias mux="tmuxinator"
 alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
 
@@ -118,3 +122,6 @@ source <(fzf --zsh)
 
 # Set up golang
 export PATH=$PATH:/usr/local/go/bin
+
+# ruby
+export PATH=$PATH:/home/tecuc/.local/share/gem/ruby/3.3.0/bin

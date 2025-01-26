@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+hdmi_active=$(xrandr |grep ' connected' |grep 'HDMI' |awk '{print $1}')
+
+if [[ ! -z "$hdmi_active" ]]; then
+    xrandr --output eDP-1 --off --output HDMI-1-0 --auto --primary --right-of eDP-1
+fi

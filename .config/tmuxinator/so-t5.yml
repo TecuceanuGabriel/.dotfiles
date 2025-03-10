@@ -1,7 +1,7 @@
-# /home/tecuc/.config/tmuxinator/so_t4.yml
+# /home/tecuc/.config/tmuxinator/so-t5.yml
 
-name: so_t4
-root: /home/tecuc/Dev/assignment-mini-shell
+name: so-t5
+root: /home/tecuc/Dev/assignment-async-web-server
 
 # Optional tmux socket
 # socket_name: foo
@@ -46,5 +46,4 @@ root: /home/tecuc/Dev/assignment-mini-shell
 
 windows:
   - editor: cd src && vim
-  - shell: 
-  - tests:
+  - test:

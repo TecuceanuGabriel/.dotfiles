@@ -193,11 +193,7 @@ bar {
 }
 
 exec --no-startup-id /home/tecuc/scripts/i3_hdmi
-exec --no-startup-id nitrogen --restore
-exec picom
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-# FKeys
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness

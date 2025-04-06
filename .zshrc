@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
-export PATH="/opt/idea-IU-242.23339.11/bin/:$PATH"
+# export PATH="/opt/idea-IU-242.23339.11/bin/:$PATH"
 
 export EDITOR=nvim
 
@@ -117,10 +117,13 @@ alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n 
 source <(fzf --zsh)
 
 # Set up golang
-export PATH=$PATH:/usr/local/go/bin
+export PATH="/usr/local/go/bin:$PATH"
 
 # ruby
-export PATH=$PATH:/home/tecuc/.local/share/gem/ruby/3.3.0/bin
+export PATH="/home/tecuc/.local/share/gem/ruby/3.3.0/bin:$PATH"
+
+# haskell
+export PATH="$HOME/.stack/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -110,20 +110,22 @@ alias sudo='sudo '
 
 alias vim="nvim"
 
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+
 alias mux="tmuxinator"
 alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# Set up golang
-export PATH="/usr/local/go/bin:$PATH"
+# haskell
+export PATH="$HOME/.stack/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
 # ruby
 export PATH="/home/tecuc/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
-# haskell
-export PATH="$HOME/.stack/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+# rust
+export PATH="$PATH::$HOME/.cargo/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

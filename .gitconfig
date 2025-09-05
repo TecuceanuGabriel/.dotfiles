@@ -1,12 +1,12 @@
 [user]
 	email = tecuceanu.gabriel22@gmail.com
-	name = tecuc
+	name = Gabriel-Cristian Tecuceanu
 [core]
 	; autocrlf = input
 	; safecrlf = true
 	editor = nvim
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [alias]
     co = checkout 
     ci = commit 

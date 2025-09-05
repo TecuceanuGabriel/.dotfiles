@@ -112,11 +112,16 @@ alias vim="nvim"
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
-alias mux="tmuxinator"
-alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
+# alias mux="tmuxinator"
+# alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
+alias mfd="tsman menu -p -a"
+
+# export TSMAN_CONFIG_STORAGE_DIR="$HOME/.config/ts-sessions"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+alias inv='vim $(fzf --preview="bat --color=always {}")'
 
 # haskell
 export PATH="$HOME/.stack/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"

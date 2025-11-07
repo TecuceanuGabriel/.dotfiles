@@ -183,13 +183,27 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+# monitor
+workspace 1 output primary
+workspace 2 output primary
+workspace 3 output primary
+workspace 4 output primary
+workspace 5 output primary
+workspace 6 output primary
+workspace 7 output primary
+workspace 8 output primary
+
+workspace 9 output eDP-1
+workspace 10 output eDP-1
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         position top
-        status_command i3status
+        status_command i3status 
+        tray_output primary
 }
 
 exec --no-startup-id /home/tecuc/scripts/i3_hdmi

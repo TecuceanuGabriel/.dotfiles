@@ -110,8 +110,9 @@ alias sudo='sudo '
 
 alias vim="nvim"
 
-alias mux="tmuxinator"
-alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
+# alias mux="tmuxinator"
+# alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
+alias mfd="tsman menu -p -a"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
@@ -125,7 +126,12 @@ export PATH="/home/tecuc/.local/share/gem/ruby/3.3.0/bin:$PATH"
 # haskell
 export PATH="$HOME/.stack/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+source /home/tecuc/.zsh_kraft_completion;

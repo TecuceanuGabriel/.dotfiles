@@ -8,8 +8,8 @@ BreakBeforeBraces: Linux
 
 AlignAfterOpenBracket: Align
 
-BinPackArguments: False
-BinPackParameters: False
+# BinPackArguments: False
+# BinPackParameters: False
 
 AllowAllParametersOfDeclarationOnNextLine: False
 AllowAllArgumentsOnNextLine: False

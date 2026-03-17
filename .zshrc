@@ -112,6 +112,9 @@ alias vim="nvim"
 
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
+# dark mode
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 # alias mux="tmuxinator"
 # alias mux-fd='project=$(tmuxinator list -n | tail -n +2 | fzf --exit-0) && [ -n "$project" ] && tmuxinator start "$project"'
 alias mfd="tsman menu -p -a"
@@ -129,9 +132,19 @@ export PATH="$HOME/.stack/bin:$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
 # ruby
 export PATH="/home/tecuc/.local/share/gem/ruby/3.3.0/bin:$PATH"
 
+# export PATH="$PATH:/home/tecuc/.platformio/penv/bin"
+
 # rust
 export PATH="$PATH::$HOME/.cargo/bin"
+
+# go
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=$HOME/.local/bin:$PATH
+
+[ -f "/home/tecuc/.ghcup/env" ] && . "/home/tecuc/.ghcup/env"  # ghcup-env
+
+export PATH=$PATH:/home/tecuc/.platformio/penv/bin
